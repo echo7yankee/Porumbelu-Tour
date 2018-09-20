@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  min-height: 13rem;
+  min-height: 10rem;
   background-color: $redCoral;
   box-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   display: flex;
@@ -9,6 +9,10 @@
   padding: 0.7rem 0.7rem;
   position: relative;
   transition: all 0.3s;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 
   &__logo {
     font-family: "Shadows Into Light", cursive;
@@ -90,3 +94,86 @@
   z-index: 1000;
 }
 /* active */
+
+@media only screen and (max-width: 768px) {
+  .header-phone {
+    display: block;
+    position: fixed;
+    min-height: 100vh;
+  }
+
+  .active-header-phone {
+    min-height: 100vh;
+    position: fixed;
+    z-index: 1500;
+  }
+
+  .menu {
+    width: 3rem;
+    height: 3.5rem;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+
+    &__one {
+      width: 100%;
+      height: 0.4rem;
+      background-color: $menuColor;
+      position: relative;
+      transition: all 0.5s;
+    }
+
+    &__one::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 1rem;
+      background-color: $menuColor;
+      transition: all 0.5s;
+    }
+
+    &__one::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -1rem;
+      background-color: $menuColor;
+      transition: all 0.5s;
+    }
+
+    &__two {
+      width: 100%;
+      height: 0.4rem;
+      background-color: transparent;
+      position: relative;
+      transition: all 0.5s;
+    }
+
+    &__two::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0rem;
+      background-color: $menuColor;
+      transform: rotate(45deg);
+      transition: all 0.5s;
+    }
+
+    &__two::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0rem;
+      background-color: $menuColor;
+      transform: rotate(-45deg);
+      transition: all 0.5s;
+    }
+  }
+}

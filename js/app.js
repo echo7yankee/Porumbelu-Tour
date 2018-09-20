@@ -93,6 +93,8 @@ function playPauseSlides() {
 function navbar() {
   const navbar = document.querySelector(".header");
   const navbarTop = navbar.getBoundingClientRect().top;
+  const menu = document.querySelector(".menu");
+  const menuOne = document.querySelector(".menu__one");
 
   function fixedNav() {
     if (navbarTop >= window.scrollY) {
@@ -104,6 +106,11 @@ function navbar() {
     }
   }
 
+  function openMenu() {
+    menuOne.classList.toggle("menu__two");
+  }
+
+  menu.addEventListener("click", openMenu);
   window.addEventListener("scroll", fixedNav);
 }
 
