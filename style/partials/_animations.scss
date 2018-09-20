@@ -1,0 +1,13 @@
+@keyframes number {
+  0% {
+    transform: scale(1.02);
+  }
+
+  50% {
+    transform: scale(0.99);
+  }
+
+  100% {
+    transform: scale(1.02);
+  }
+}

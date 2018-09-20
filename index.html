@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./style/main/main.css">
+    <title>Porumbelu-Tour</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo-container">
+            <h1 class="header__logo">
+                Porumbelu Tour
+            </h1>
+        </div>
+
+        <div class="header__number ">
+            <a href="tel:40753977077" class="header__link-number">Rezerva la 40-753-977-077</a>
+            <i class="fas fa-phone header__icon"></i>
+        </div>
+
+        <ul class="header__list">
+
+            <li class="header__item" id="home">
+                <a href="./index.html" class="header__link current">Acasa</a>
+            </li>
+            <li class="header__item" id="contact">
+                <a href="./contact.html" class="header__link">Contact Si Rezervari</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="banner">
+        <div class="banner__header-container">
+            <h1 class="banner__header">Transport persoane Romania-Austria si Austria-Romania</h1>
+            <p class="banner__paragraph">Preturi incepand de la 60 <i class="fas fa-euro-sign"></i> de persoana</p>
+            <div class="banner__underline"></div>
+            <div class="banner__info">
+                <!--<p class="slider__text">Plecari in fiecare zi <i class="far fa-calendar-alt"></i></p>
+                <p class="slider__text">Transport la usa <i class="fas fa-home"></i></p>
+                <p class="slider__text">Transport comfortabil <i class="fas fa-couch"></i></p> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="galleryContainer">
+            <div class="slideShowContainer">
+                <div id="playPauseBtn" onclick="playPauseSlides()"></div>
+                <div class="leftArrow" onclick="plusSlides(-1)"><span class="arrow arrowLeft"></span></div>
+                <div class="rightArrow" onclick="plusSlides(1)"><span class="arrow arrowRight"></span></div>
+                <div class="captionHolder">
+                    <p class=" captionText">t</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="img/slider-1.jpeg" alt="">
+                    <p class="captionText">Caption Text-01</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="img/slider-2.jpeg" alt="">
+                    <p class="captionText">Caption Text-02</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="img/slider-3.jpeg" alt="">
+                    <p class="captionText">Caption Text-03</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="img/slider-4.jpeg" alt="">
+                    <p class="captionText">Caption Text-04</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="img/slider-5.jpeg" alt="">
+                    <p class="captionText">Caption Text-05</p>
+                </div>
+            </div>
+            <div id="dotsContainer"></div>
+        </div>
+    </section>
+
+
+
+    <script src="./js/app.js"></script>
+    <script>window.onload = indexInit</script>
+
+</body>
+
+</html>
