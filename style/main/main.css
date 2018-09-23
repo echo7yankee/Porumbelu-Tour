@@ -339,12 +339,13 @@ body {
 
 .banner__header {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.2rem;
   color: #05486b;
   margin-top: 4rem;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 768px) {
@@ -354,13 +355,14 @@ body {
 }
 
 .banner__paragraph {
-  font-size: 3.4rem;
+  font-size: 3.3rem;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.1rem;
   color: #05486b;
   text-align: center;
   margin-top: 1.5rem;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 768px) {
@@ -794,9 +796,9 @@ body {
 }
 
 .contact__container {
-  margin-top: 5.5rem;
+  margin-top: 4.5rem;
   width: 95%;
-  min-height: 80vh;
+  min-height: 90vh;
   background: #ededdc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,12 +811,128 @@ body {
 
 .contact__form-container {
   width: 65%;
-  background-color: lightcoral;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0rem 3rem;
+  margin-top: 1.5rem;
+}
+
+.contact__form-label {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.contact__form-input {
+  width: 100%;
+  height: 6rem;
+  background-color: #cac9c9;
+  border-radius: 0.3rem;
+  border: none;
+  -webkit-box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.35);
+  outline: none;
+  color: #333;
+  font-size: 1.9rem;
+  text-indent: 1.2rem;
+}
+
+.contact__form-input::-webkit-input-placeholder {
+  font-size: 1.7rem;
+  color: #333;
+  opacity: 0.8;
+}
+
+.contact__form-input:-ms-input-placeholder {
+  font-size: 1.7rem;
+  color: #333;
+  opacity: 0.8;
+}
+
+.contact__form-input::-ms-input-placeholder {
+  font-size: 1.7rem;
+  color: #333;
+  opacity: 0.8;
+}
+
+.contact__form-input::placeholder {
+  font-size: 1.7rem;
+  color: #333;
+  opacity: 0.8;
+}
+
+.contact__form-submit {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  font-size: 2.4rem;
+  background-color: #c83349;
+  padding: 1.2rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  color: #f5f5f5;
+  text-align: center;
+  margin: 1.2rem 0;
+  display: block;
+  -webkit-box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.contact__form-submit:hover {
+  background-color: #b4142c;
+}
+
+.contact__form-alert {
+  text-align: center;
+  color: red;
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
 .contact__address-container {
   width: 35%;
-  min-height: 60vh;
+  min-height: 62vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,6 +1004,12 @@ body {
   display: block;
   -webkit-box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.4);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.contact__message:link:hover, .contact__message:visited:hover {
+  background-color: #b4142c;
 }
 
 .contact__icon {

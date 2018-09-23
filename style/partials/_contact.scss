@@ -5,9 +5,9 @@
   align-items: center;
 
   &__container {
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
     width: 95%;
-    min-height: 80vh;
+    min-height: 90vh;
     background: #ededdc;
     display: flex;
     align-items: center;
@@ -16,12 +16,86 @@
 
   &__form-container {
     width: 65%;
-    background-color: lightcoral;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 3rem;
+    margin-top: 1.5rem;
+  }
+
+  &__form-label {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 6rem;
+    background-color: #cac9c9;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.35);
+    outline: none;
+    color: #333;
+    font-size: 1.9rem;
+    text-indent: 1.2rem;
+  }
+
+  &__form-input::placeholder {
+    font-size: 1.7rem;
+    color: #333;
+    opacity: 0.8;
+  }
+
+  &__form-submit {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    font-size: 2.4rem;
+    background-color: #c83349;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    color: $white;
+    text-align: center;
+    margin: 1.2rem 0;
+    display: block;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    &:hover {
+      background-color: #b4142c;
+    }
+  }
+
+  &__form-alert {
+    text-align: center;
+    color: red;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
   }
 
   &__address-container {
     width: 35%;
-    min-height: 60vh;
+    min-height: 62vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -81,6 +155,11 @@
     margin: 1.2rem 0;
     display: block;
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #b4142c;
+    }
   }
 
   &__icon {

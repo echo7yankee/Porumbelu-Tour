@@ -127,5 +127,20 @@ function indexInit() {
 }
 
 function contactInit() {
+  const formInput = document.querySelectorAll(".contact__form-input");
+  const form = document.querySelector(".contact__form");
+  const spanAlert = document.querySelector(".contact__form-alert");
+
+  form.addEventListener("submit", e => {
+    formInput.forEach(input => {
+      if (input.value === "") {
+        e.preventDefault();
+        spanAlert.textContent = "Va rog sa completati toate campurile";
+      } else {
+        spanAlert.textContent = "Rezervatia d-voastra a fost trimisa";
+      }
+    });
+  });
+
   navbar();
 }
