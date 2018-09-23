@@ -49,7 +49,7 @@ body {
 
 .header {
   width: 100%;
-  min-height: 10rem;
+  min-height: 7rem;
   background-color: #f53240;
   -webkit-box-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
           box-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -64,13 +64,24 @@ body {
           justify-content: space-between;
   padding: 0.7rem 0.7rem;
   position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: fixed;
+  z-index: 1400;
 }
 
 @media only screen and (max-width: 768px) {
   .header {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 20rem;
+    -webkit-transform: translateY(-105%);
+            transform: translateY(-105%);
   }
 }
 
@@ -108,13 +119,13 @@ body {
 }
 
 .header__icon {
-  font-size: 3.3rem;
+  font-size: 3rem;
   color: #f5f5f5;
   margin-left: 2.5rem;
 }
 
 .header__link-number {
-  font-size: 2.8rem !important;
+  font-size: 2.4rem !important;
   color: #f53240 !important;
   background-color: #f5f5f5;
   border-radius: 0.5rem;
@@ -125,17 +136,18 @@ body {
   padding: 0 1.5rem;
   -webkit-animation: number 1.5s infinite ease-in-out forwards;
           animation: number 1.5s infinite ease-in-out forwards;
-  min-height: 7.2rem;
+  min-height: 6.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  outline: none;
 }
 
 .header__link:link, .header__link:visited {
-  min-height: 4.3rem;
+  min-height: 3.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,20 +155,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 2rem;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #f5f5f5;
   border-radius: 0.3rem;
+  outline: none;
 }
 
 .header__link:link:hover, .header__link:visited:hover {
   text-decoration: underline;
+}
+
+.menu-container {
+  display: none;
 }
 
 .header .current {
@@ -164,34 +181,46 @@ body {
   color: #f53240;
 }
 
-/* active */
-.active-header {
-  min-height: 9rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+.menu__span {
+  display: none;
 }
 
-/* active */
 @media only screen and (max-width: 768px) {
-  .header-phone {
-    display: block;
-    position: fixed;
-    min-height: 100vh;
-  }
   .active-header-phone {
-    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 20rem;
     position: fixed;
     z-index: 1500;
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+  .menu-container {
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f53240;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: 3000;
   }
   .menu {
-    width: 3rem;
-    height: 3.5rem;
-    position: fixed;
-    top: 5%;
-    right: 5%;
+    width: 10rem;
+    height: 5rem;
     z-index: 2000;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -199,11 +228,28 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    cursor: pointer;
+    outline: none;
+    margin-right: 1rem;
+    border: 1px solid #f5f5f5;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .menu__span {
+    display: block;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #e3e2df;
   }
   .menu__one {
-    width: 100%;
+    width: 3rem;
     height: 0.4rem;
-    background-color: #000000;
+    background-color: #e3e2df;
     position: relative;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -214,7 +260,7 @@ body {
     width: 100%;
     height: 100%;
     top: 1rem;
-    background-color: #000000;
+    background-color: #e3e2df;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -224,12 +270,12 @@ body {
     width: 100%;
     height: 100%;
     top: -1rem;
-    background-color: #000000;
+    background-color: #e3e2df;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   .menu__two {
-    width: 100%;
+    width: 3rem;
     height: 0.4rem;
     background-color: transparent;
     position: relative;
@@ -242,7 +288,7 @@ body {
     width: 100%;
     height: 100%;
     top: 0rem;
-    background-color: #000000;
+    background-color: #f5f5f5;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     -webkit-transition: all 0.5s;
@@ -254,7 +300,7 @@ body {
     width: 100%;
     height: 100%;
     top: 0rem;
-    background-color: #000000;
+    background-color: #f5f5f5;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     -webkit-transition: all 0.5s;
@@ -293,20 +339,34 @@ body {
 
 .banner__header {
   text-align: center;
-  font-size: 4.8rem;
+  font-size: 4rem;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.2rem;
   color: #05486b;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner__header {
+    font-size: 3.2rem;
+  }
 }
 
 .banner__paragraph {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.1rem;
   color: #05486b;
   text-align: center;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner__paragraph {
+    font-size: 2.6rem;
+  }
 }
 
 .banner__underline {
@@ -385,12 +445,6 @@ body {
   overflow: hidden;
   background-color: gainsboro;
   position: relative;
-}
-
-@media only screen and (max-width: 768px) {
-  .galleryContainer .slideShowContainer {
-    z-index: -3;
-  }
 }
 
 .galleryContainer .slideShowContainer .imageHolder {
@@ -724,5 +778,117 @@ body {
     opacity: 1;
     margin-top: 0;
   }
+}
+
+.contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__container {
+  margin-top: 5.5rem;
+  width: 95%;
+  min-height: 80vh;
+  background: #ededdc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5rem;
+}
+
+.contact__form-container {
+  width: 65%;
+  background-color: lightcoral;
+}
+
+.contact__address-container {
+  width: 35%;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-left: 0.2rem solid #e3e2df;
+}
+
+.contact__secondary {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  background-color: #f53240;
+  padding: 1.5rem 0.8rem;
+  border-radius: 0.3rem;
+  color: #f5f5f5;
+  text-align: center;
+  margin: 0 1.5rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.5);
+}
+
+.contact__info {
+  margin-left: 1.2rem;
+  padding: 0 1.4rem;
+}
+
+.contact__ternary {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 2.3rem;
+  color: #36486b;
+  border-bottom: 0.1rem solid #364836;
+  text-transform: uppercase;
+}
+
+.contact__text {
+  font-size: 1.6rem;
+  color: #36486b;
+  text-transform: uppercase;
+}
+
+.contact__info--contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__message:link, .contact__message:visited {
+  text-decoration: none;
+  font-size: 2.4rem;
+  background-color: #c83349;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.3rem;
+  color: #f5f5f5;
+  text-align: center;
+  margin: 1.2rem 0;
+  display: block;
+  -webkit-box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.4);
+}
+
+.contact__icon {
+  margin: 0 0.8rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -14,28 +14,68 @@
 
 <body>
 
+    <div class="menu-container">
+        <div class="menu">
+            <span class="menu__span">Meniu</span>
+            <div class="menu__one"></div>
+            <!--  <div class="menu__two"></div> -->
+        </div>
+    </div>
+
+
+
     <header class="header">
         <div class="header__logo-container">
-            <h1 class="header__logo">
-                Porumbelu Tour
-            </h1>
+            <!--   <h1 class="header__logo">
+                        Porumbelu Tour
+                    </h1> -->
         </div>
 
         <div class="header__number ">
-            <a href="" class="header__link-number">Rezerva la 0753939413</a>
+            <a href="tel:40753977077" class="header__link-number">Rezerva la 40-753-977-077</a>
             <i class="fas fa-phone header__icon"></i>
         </div>
 
         <ul class="header__list">
 
             <li class="header__item" id="home">
-                <a href="./index.html" class="header__link">Acasa</a>
+                <a href="./index.html" class="header__link ">Acasa</a>
             </li>
             <li class="header__item" id="contact">
                 <a href="./contact.html" class="header__link current">Contact Si Rezervari</a>
             </li>
         </ul>
     </header>
+
+    <section class="contact">
+        <div class="contact__container">
+            <div class="contact__form-container">
+                <form action="https://formspree.io/cosminifrim55@yahoo.com.com" method="POST" class="contact__form">
+                    <input type="text" name="name">
+                    <input type="email" name="_replyto">
+                    <input type="submit" value="Rezerva un transport">
+                </form>
+            </div>
+            <div class="contact__address-container">
+                <h2 class="contact__secondary">Porumbelu Tour - Contact</h2>
+                <div class="contact__info">
+                    <h3 class="contact__ternary">Adresa</h3>
+                    <p class="contact__text">840 w Strada Moraviei, nr.4, Arad</p>
+                </div>
+                <div class="contact__info contact__info--contact">
+                    <h3 class="contact__ternary">E-mail si Telefon</h3>
+                    <a href="" class="contact__message">daij@yahoo.com <i class="fas fa-envelope contact__icon"></i></a>
+                    <a href="tel:40753977077" class="contact__message">40-753-977-077 <i class="fas fa-phone header__icon contact__icon"></i></a>
+                </div>
+                <div class="contact__info">
+                    <h3 class="contact__ternary">Orar</h3>
+                    <p class="contact__text">Luni - Sambata 7:00 AM - 17: 00 PM</p>
+                    <p class="contact__text">Duminica - Inchis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <script src="./js/app.js"></script>

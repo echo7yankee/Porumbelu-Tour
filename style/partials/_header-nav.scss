@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  min-height: 10rem;
+  min-height: 7rem;
   background-color: $redCoral;
   box-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   display: flex;
@@ -8,10 +8,15 @@
   justify-content: space-between;
   padding: 0.7rem 0.7rem;
   position: relative;
-  transition: all 0.3s;
+  transition: all 0.5s;
+  position: fixed;
+  z-index: 1400;
 
   @media only screen and (max-width: 768px) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 20rem;
+    transform: translateY(-105%);
   }
 
   &__logo {
@@ -37,13 +42,13 @@
   }
 
   &__icon {
-    font-size: 3.3rem;
+    font-size: 3rem;
     color: $white;
     margin-left: 2.5rem;
   }
 
   &__link-number {
-    font-size: 2.8rem !important;
+    font-size: 2.4rem !important;
     color: $redCoral !important;
     background-color: $white;
     border-radius: 0.5rem;
@@ -53,30 +58,36 @@
     letter-spacing: 0.1rem;
     padding: 0 1.5rem;
     animation: number 1.5s infinite ease-in-out forwards;
-    min-height: 7.2rem;
+    min-height: 6.2rem;
     display: flex;
     align-items: center;
+    outline: none;
   }
 
   &__link:link,
   &__link:visited {
-    min-height: 4.3rem;
+    min-height: 3.8rem;
     display: flex;
     align-items: center;
     margin: 0 2rem;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: background-color 0.2s;
     font-family: "Oswald", sans-serif;
     letter-spacing: 0.1rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: $white;
     border-radius: 0.3rem;
+    outline: none;
     &:hover {
       text-decoration: underline;
     }
   }
+}
+
+.menu-container {
+  display: none;
 }
 
 .header .current {
@@ -84,42 +95,58 @@
   color: $redCoral;
 }
 
-/* active */
-.active-header {
-  min-height: 9rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+.menu__span {
+  display: none;
 }
-/* active */
 
 @media only screen and (max-width: 768px) {
-  .header-phone {
-    display: block;
-    position: fixed;
-    min-height: 100vh;
-  }
-
   .active-header-phone {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 20rem;
     position: fixed;
     z-index: 1500;
+    transform: translateY(30%);
+  }
+
+  .menu-container {
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $redCoral;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 3000;
   }
 
   .menu {
-    width: 3rem;
-    height: 3.5rem;
-    position: fixed;
-    top: 5%;
-    right: 5%;
+    width: 10rem;
+    height: 5rem;
     z-index: 2000;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    outline: none;
+    margin-right: 1rem;
+    border: 1px solid $white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    transition: all 0.5s;
+
+    &__span {
+      display: block;
+      margin-right: 1rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      transition: all 0.5s;
+      color: $menuColor;
+    }
 
     &__one {
-      width: 100%;
+      width: 3rem;
       height: 0.4rem;
       background-color: $menuColor;
       position: relative;
@@ -147,7 +174,7 @@
     }
 
     &__two {
-      width: 100%;
+      width: 3rem;
       height: 0.4rem;
       background-color: transparent;
       position: relative;
@@ -160,7 +187,7 @@
       width: 100%;
       height: 100%;
       top: 0rem;
-      background-color: $menuColor;
+      background-color: $white;
       transform: rotate(45deg);
       transition: all 0.5s;
     }
@@ -171,7 +198,7 @@
       width: 100%;
       height: 100%;
       top: 0rem;
-      background-color: $menuColor;
+      background-color: $white;
       transform: rotate(-45deg);
       transition: all 0.5s;
     }
