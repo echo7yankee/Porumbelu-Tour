@@ -5,28 +5,37 @@
   align-items: center;
 
   &__container {
-    margin-top: 4.5rem;
-    width: 95%;
+    width: 100%;
     min-height: 90vh;
     background: #ededdc;
     display: flex;
     align-items: center;
     border-radius: 0.5rem;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      margin-top: 4.5rem;
+    }
   }
 
   &__form-container {
     width: 65%;
-    min-height: 60vh;
+    min-height: 65rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    margin-top: 3.8rem;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   &__form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 0rem 3rem;
@@ -41,6 +50,15 @@
     color: #333;
     text-transform: uppercase;
     margin-top: 1.5rem;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.7rem;
+    }
   }
 
   &__form-input {
@@ -54,34 +72,55 @@
     color: #333;
     font-size: 1.9rem;
     text-indent: 1.2rem;
+
+    @media screen and (max-width: 992px) {
+      font-size: 1.7rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
 
   &__form-input::placeholder {
     font-size: 1.7rem;
     color: #333;
     opacity: 0.8;
+
+    @media screen and (max-width: 992px) {
+      font-size: 1.5rem;
+    }
   }
 
   &__form-submit {
     font-family: "Oswald", sans-serif;
     text-decoration: none;
     font-size: 2.4rem;
-    background-color: #c83349;
+    background-color: #32425f;
     padding: 1.2rem 1.5rem;
     border: none;
     border-radius: 0.3rem;
     color: $white;
     text-align: center;
-    margin: 1.2rem 0;
     display: block;
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
 
     &:hover {
-      background-color: #b4142c;
+      background-color: #192231;
     }
   }
 
@@ -95,11 +134,16 @@
 
   &__address-container {
     width: 35%;
-    min-height: 62vh;
+    min-height: 73rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border-left: 0.2rem solid $light-grey;
+
+    @media screen and (max-width: 992px) {
+      width: 95%;
+      border: none;
+    }
   }
 
   &__secondary {
@@ -115,6 +159,17 @@
     margin: 0 1.5rem;
     text-transform: uppercase;
     box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.5);
+    display: block;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      font-size: 2.4rem;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.1rem;
+    }
   }
 
   &__info {
@@ -130,6 +185,13 @@
     color: #36486b;
     border-bottom: 0.1rem solid #364836;
     text-transform: uppercase;
+    @media screen and (max-width: 992px) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.7rem;
+    }
   }
 
   &__text {
@@ -147,7 +209,7 @@
   &__message:visited {
     text-decoration: none;
     font-size: 2.4rem;
-    background-color: #c83349;
+    background-color: #32425f;
     padding: 1.2rem 1.5rem;
     border-radius: 0.3rem;
     color: $white;
@@ -157,12 +219,32 @@
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s;
 
+    @media screen and (max-width: 992px) {
+      font-size: 2.2rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+
     &:hover {
-      background-color: #b4142c;
+      background-color: #192231;
     }
   }
 
   &__icon {
     margin: 0 0.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact__underline {
+    width: 90%;
+    height: 0.2rem;
+    background-color: $light-grey;
+    margin: 6rem 0;
+
+    @media screen and (max-width: 768px) {
+      margin: 4.5rem 0;
+    }
   }
 }

@@ -124,6 +124,230 @@ function indexInit() {
   }
   slider();
   navbar();
+
+  function sortLocations() {
+    const parentLocation = document.querySelector(".locations__location");
+    const parentLocationRo = document.querySelector(".locations__ro");
+    const locationsText = document.querySelectorAll(".locations__text");
+
+    const locationsAu = [
+      {
+        name: "Graz"
+      },
+      {
+        name: "Wiener Neustadt"
+      },
+      {
+        name: "Parndorf"
+      },
+      {
+        name: "Viena"
+      },
+      {
+        name: "Sankt Pölten"
+      },
+      {
+        name: "Melk"
+      },
+      {
+        name: "Amstetten"
+      },
+      {
+        name: "Enns"
+      },
+      {
+        name: "Linz"
+      },
+      {
+        name: "Traun"
+      },
+      {
+        name: "Wels"
+      },
+      {
+        name: "Salzburg"
+      },
+      {
+        name: "Villach"
+      },
+      {
+        name: "Klagenfurt"
+      },
+      {
+        name: "Wolfsberg"
+      },
+      {
+        name: "Leoben"
+      },
+      {
+        name: "Liezen"
+      },
+      {
+        name: "Flachau"
+      },
+      {
+        name: "Zell am See"
+      },
+      {
+        name: "Bruck an der Mur"
+      },
+      {
+        name: "Hartberg"
+      },
+      {
+        name: "Gleisdorf"
+      },
+      {
+        name: "Innsbruck"
+      }
+    ];
+
+    const locationsRo = [
+      {
+        name: "Otelu Roșu"
+      },
+      {
+        name: "Lugoj "
+      },
+      {
+        name: "Reșița"
+      },
+      {
+        name: "Bocsa"
+      },
+      {
+        name: "Timisoara"
+      },
+      {
+        name: "Arad"
+      },
+      {
+        name: "Jimbolia"
+      },
+      {
+        name: "Sannicolau Mare"
+      },
+      {
+        name: "București"
+      },
+      {
+        name: "Pitești"
+      },
+      {
+        name: "Slatina"
+      },
+      {
+        name: "Balș"
+      },
+      {
+        name: "Craiova"
+      },
+      {
+        name: "Filiași"
+      },
+      {
+        name: "Strehaia"
+      },
+      {
+        name: "Drobeta-Turnu"
+      },
+      {
+        name: "Orsova"
+      },
+      {
+        name: "Caransebeș"
+      },
+      {
+        name: "Cenad"
+      },
+      {
+        name: "Iași"
+      },
+      {
+        name: "Bacău"
+      },
+      {
+        name: "Huși"
+      },
+      {
+        name: "Bârlad"
+      },
+      {
+        name: "Vaslui"
+      },
+      {
+        name: "Onești"
+      },
+      {
+        name: "Brașov"
+      },
+      {
+        name: "Sighișoara"
+      },
+      {
+        name: "Mediaș"
+      },
+      {
+        name: "Sibiu"
+      },
+      {
+        name: "Alba Iulia"
+      },
+      {
+        name: "Sebeș"
+      },
+      {
+        name: "Deva"
+      },
+      {
+        name: "Ilia"
+      },
+      {
+        name: "Savârsin"
+      },
+      {
+        name: "Lipova"
+      }
+    ];
+
+    locationsAu.sort((a, b) => {
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
+    });
+
+    locationsRo.sort((a, b) => {
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
+    });
+
+    function createLocation(loc, parent) {
+      const locationText = document.createElement("p");
+      locationText.classList.add("locations__text");
+      locationText.textContent = loc.name;
+      locationText.addEventListener("click", () => {
+        location.replace("../contact.html");
+      });
+      parent.appendChild(locationText);
+    }
+
+    locationsAu.map(location => {
+      createLocation(location, parentLocation);
+    });
+
+    locationsRo.map(location => {
+      createLocation(location, parentLocationRo);
+    });
+
+    locationsText.forEach(loc => {
+      loc.addEventListener("click", () => {
+        location.replace("../contact.html");
+      });
+    });
+  }
+
+  sortLocations();
 }
 
 function contactInit() {
@@ -135,7 +359,7 @@ function contactInit() {
     formInput.forEach(input => {
       if (input.value === "") {
         e.preventDefault();
-        spanAlert.textContent = "Va rog sa completati toate campurile";
+        spanAlert.textContent = "Toate campurile trebuie completate";
       } else {
         spanAlert.textContent = "Rezervatia d-voastra a fost trimisa";
       }
