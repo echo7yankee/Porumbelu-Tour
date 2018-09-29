@@ -5,16 +5,15 @@
   align-items: center;
 
   &__container {
-    width: 100%;
-    min-height: 90vh;
+    width: 95%;
+    min-height: 80vh;
     background: #ededdc;
     display: flex;
     align-items: center;
     border-radius: 0.5rem;
-
+    margin-top: 10rem;
     @media screen and (max-width: 992px) {
       flex-direction: column;
-      margin-top: 4.5rem;
     }
   }
 
@@ -121,6 +120,9 @@
 
     &:hover {
       background-color: #192231;
+      @media screen and (max-width: 768px) {
+        background-color: #32425f;
+      }
     }
   }
 
@@ -227,7 +229,9 @@
     }
 
     &:hover {
-      background-color: #192231;
+      @media screen and (max-width: 768px) {
+        background-color: #32425f;
+      }
     }
   }
 

@@ -199,6 +199,90 @@ function indexInit() {
       },
       {
         name: "Innsbruck"
+      },
+      {
+        name: "Steyr"
+      },
+      {
+        name: "Bad Ischl"
+      },
+      {
+        name: "Lienz"
+      },
+      {
+        name: "Spittal an der D..."
+      },
+      {
+        name: "Kufstein"
+      },
+      {
+        name: "St Johann in Tirol"
+      },
+      {
+        name: "Kitzbuhel"
+      },
+      {
+        name: "Mayrhofen"
+      },
+      {
+        name: "Kaprun"
+      },
+      {
+        name: "Bad Gastein"
+      },
+      {
+        name: "Murau"
+      },
+      {
+        name: "Obertauern"
+      },
+      {
+        name: "Friesach"
+      },
+      {
+        name: "Kapfenberg"
+      },
+      {
+        name: "Waidhofen an de..."
+      },
+      {
+        name: "Mariazell"
+      },
+      {
+        name: "Baden"
+      },
+      {
+        name: "Krems an der Do..."
+      },
+      {
+        name: "Hollabrunn"
+      },
+      {
+        name: "Horn"
+      },
+      {
+        name: "Mistelbach"
+      },
+      {
+        name: "Zwettl"
+      },
+      {
+        name: "Gmund"
+      },
+      {
+        name: "Freistadt"
+      },
+      {
+        name: "Braunau am inn"
+      },
+      {
+        name: "Mattighofen"
+      },
+      {
+        name: "Mondsee"
+      },
+      {
+        name: "Gmunden"
       }
     ];
 

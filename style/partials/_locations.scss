@@ -2,13 +2,95 @@
   width: 100%;
   margin-top: 8rem;
 
+  &__info {
+    width: 95%;
+    margin: 0rem auto;
+    background: #ededdc;
+    padding: 1.2rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+
+  &__icon {
+    margin-right: 1.2rem;
+    font-size: 3rem;
+    color: $redCoral;
+  }
+
+  &__quaternary {
+    color: $deepSky-blue;
+    font-weight: 400;
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 5rem 0;
+
+    @media screen and (max-width: 992px) {
+      font-size: 2.2rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__paragraph {
+    color: $deepSky-blue;
+    font-size: 2.3rem;
+    text-align: left;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: 992px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__number:link,
+  &__number:visited {
+    color: $white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 2.2rem;
+    width: 25rem;
+    display: inline;
+    padding: 0.8rem 1rem;
+    background-color: $redCoral;
+    text-align: center;
+
+    &:hover {
+      background: rgb(185, 36, 46);
+      @media screen and (max-width: 768px) {
+        background-color: $redCoral;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      display: block;
+      width: 100%;
+      margin: 3rem auto;
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 600px) {
+      display: block;
+      width: 100%;
+      margin: 3rem auto;
+      font-size: 1.8rem;
+    }
+  }
+
   &__container {
     width: 95%;
     min-height: 100vh;
     background: #ededdc;
     margin: 0 auto;
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
     display: flex;
   }
 
@@ -30,13 +112,13 @@
   &__ternary {
     font-family: "Oswald", sans-serif;
     text-align: center;
-    margin-top: 2.4rem;
     font-size: 2.8rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    padding: 0.6rem 0.3rem;
+    padding: 1.7rem 0.3rem;
     color: $deepSky-blue;
+    border-top: 1px solid #c2c2c2;
 
     @media screen and (max-width: 992px) {
       font-size: 2.2rem;
@@ -75,6 +157,9 @@
 
     &:hover {
       background-color: rgb(185, 185, 185);
+      @media screen and (max-width: 768px) {
+        background-color: transparent;
+      }
     }
   }
 

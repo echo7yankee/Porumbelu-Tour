@@ -42,7 +42,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  background-color: #192231;
+  /*  background-color: $greyBlue; */
+  background: -webkit-gradient(linear, left top, right top, from(#0f2027), color-stop(#203a43), to(#2c5364));
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   overflow-x: hidden;
   -webkit-font-smoothing: antialised;
 }
@@ -796,8 +798,8 @@ body {
 }
 
 .contact__container {
-  width: 100%;
-  min-height: 90vh;
+  width: 95%;
+  min-height: 80vh;
   background: #ededdc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,6 +808,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.5rem;
+  margin-top: 10rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -814,7 +817,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 4.5rem;
   }
 }
 
@@ -992,6 +994,12 @@ body {
   background-color: #192231;
 }
 
+@media screen and (max-width: 768px) {
+  .contact__form-submit:hover {
+    background-color: #32425f;
+  }
+}
+
 .contact__form-alert {
   text-align: center;
   color: red;
@@ -1124,8 +1132,10 @@ body {
   }
 }
 
-.contact__message:link:hover, .contact__message:visited:hover {
-  background-color: #192231;
+@media screen and (max-width: 768px) {
+  .contact__message:link:hover, .contact__message:visited:hover {
+    background-color: #32425f;
+  }
 }
 
 .contact__icon {
@@ -1152,13 +1162,117 @@ body {
   margin-top: 8rem;
 }
 
+.locations__info {
+  width: 95%;
+  margin: 0rem auto;
+  background: #ededdc;
+  padding: 1.2rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.locations__icon {
+  margin-right: 1.2rem;
+  font-size: 3rem;
+  color: #f53240;
+}
+
+.locations__quaternary {
+  color: #05486b;
+  font-weight: 400;
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .locations__quaternary {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .locations__quaternary {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .locations__quaternary {
+    font-size: 1.8rem;
+  }
+}
+
+.locations__paragraph {
+  color: #05486b;
+  font-size: 2.3rem;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .locations__paragraph {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .locations__paragraph {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .locations__paragraph {
+    font-size: 1.6rem;
+  }
+}
+
+.locations__number:link, .locations__number:visited {
+  color: #f5f5f5;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 2.2rem;
+  width: 25rem;
+  display: inline;
+  padding: 0.8rem 1rem;
+  background-color: #f53240;
+  text-align: center;
+}
+
+.locations__number:link:hover, .locations__number:visited:hover {
+  background: #b9242e;
+}
+
+@media screen and (max-width: 768px) {
+  .locations__number:link:hover, .locations__number:visited:hover {
+    background-color: #f53240;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .locations__number:link, .locations__number:visited {
+    display: block;
+    width: 100%;
+    margin: 3rem auto;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .locations__number:link, .locations__number:visited {
+    display: block;
+    width: 100%;
+    margin: 3rem auto;
+    font-size: 1.8rem;
+  }
+}
+
 .locations__container {
   width: 95%;
   min-height: 100vh;
   background: #ededdc;
   margin: 0 auto;
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1182,13 +1296,13 @@ body {
 .locations__ternary {
   font-family: "Oswald", sans-serif;
   text-align: center;
-  margin-top: 2.4rem;
   font-size: 2.8rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  padding: 0.6rem 0.3rem;
+  padding: 1.7rem 0.3rem;
   color: #05486b;
+  border-top: 1px solid #c2c2c2;
 }
 
 @media screen and (max-width: 992px) {
@@ -1244,6 +1358,12 @@ body {
 
 .locations__text:hover {
   background-color: #b9b9b9;
+}
+
+@media screen and (max-width: 768px) {
+  .locations__text:hover {
+    background-color: transparent;
+  }
 }
 
 .locations__link:link, .locations__link:visited {
