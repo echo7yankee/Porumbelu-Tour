@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     border-radius: 0.5rem;
-    margin-top: 10rem;
+    margin-top: 6rem;
     @media screen and (max-width: 992px) {
       flex-direction: column;
     }
@@ -62,11 +62,9 @@
 
   &__form-input {
     width: 100%;
-    height: 6rem;
-    background-color: #cac9c9;
+    height: 7rem;
     border-radius: 0.3rem;
-    border: none;
-    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.35);
+    border: 1px solid #333;
     outline: none;
     color: #333;
     font-size: 1.9rem;
@@ -94,7 +92,7 @@
   &__form-submit {
     font-family: "Oswald", sans-serif;
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     background-color: #32425f;
     padding: 1.2rem 1.5rem;
     border: none;
@@ -111,11 +109,11 @@
 
     @media screen and (max-width: 992px) {
       width: 100%;
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     @media screen and (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
 
     &:hover {
@@ -150,11 +148,11 @@
 
   &__secondary {
     font-family: "Oswald", sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
     background-color: $redCoral;
-    padding: 1.5rem 0.8rem;
+    padding: 1.5rem 1.2rem;
     border-radius: 0.3rem;
     color: $white;
     text-align: center;
@@ -165,12 +163,12 @@
 
     @media screen and (max-width: 992px) {
       width: 100%;
-      font-size: 2.4rem;
+      font-size: 2.3rem;
       margin: 0;
     }
 
     @media screen and (max-width: 768px) {
-      font-size: 2.1rem;
+      font-size: 2rem;
     }
   }
 

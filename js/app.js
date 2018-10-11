@@ -375,9 +375,6 @@ function indexInit() {
         name: "Sibiu"
       },
       {
-        name: "Alba Iulia"
-      },
-      {
         name: "Sebeș"
       },
       {
@@ -432,6 +429,7 @@ function indexInit() {
   }
 
   sortLocations();
+  dynamicDate();
 }
 
 function contactInit() {
@@ -451,4 +449,11 @@ function contactInit() {
   });
 
   navbar();
+  dynamicDate();
+}
+
+function dynamicDate() {
+  const footerDate = document.getElementById("footer__date");
+  const date = new Date().getFullYear();
+  footerDate.textContent = date;
 }

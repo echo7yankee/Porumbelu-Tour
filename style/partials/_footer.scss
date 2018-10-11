@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  background: rgb(36, 36, 36);
+
+  &__advantages {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 30vh;
+  }
+
+  &__header {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 1.6rem;
+  }
+
+  &__icons {
+    margin-right: 1rem;
+  }
+
+  &__advantage {
+    color: rgb(137, 167, 137);
+  }
+
+  &__copyright {
+    width: 100%;
+    height: 5rem;
+    background: #ededdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__copy {
+    color: rgb(74, 87, 74);
+    font-size: 1.8rem;
+  }
+}
