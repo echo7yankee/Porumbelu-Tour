@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   background: rgb(36, 36, 36);
+  margin-top: 3rem;
 
   &__advantages {
     width: 80%;
@@ -28,7 +29,7 @@
 
   &__copyright {
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     background: #ededdc;
     display: flex;
     justify-content: center;

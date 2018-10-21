@@ -97,7 +97,7 @@ function indexInit() {
     function setTimer() {
       timer = setInterval(function() {
         plusSlides(1);
-      }, 5000);
+      }, 10000);
     }
     setTimer();
 
