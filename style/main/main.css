@@ -88,9 +88,20 @@ body {
 }
 
 .header__logo {
-  font-family: "Shadows Into Light", cursive;
-  font-size: 4.8rem;
-  color: #f5f5f5;
+  font-size: 3.6rem;
+  margin-left: 2rem;
+  position: relative;
+  z-index: 2;
+  -webkit-transform: skew(-7deg);
+          transform: skew(-7deg);
+  background: #f5f5f5;
+  text-transform: uppercase;
+}
+
+.header__logo a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #f53240;
 }
 
 .header__list {
@@ -135,10 +146,10 @@ body {
   text-align: center;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.1rem;
-  padding: 0 1.5rem;
+  padding: 0 1.2rem;
   -webkit-animation: number 1.5s infinite ease-in-out forwards;
           animation: number 1.5s infinite ease-in-out forwards;
-  min-height: 6.2rem;
+  min-height: 5.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,8 +159,15 @@ body {
   outline: none;
 }
 
+@media only screen and (max-width: 992px) {
+  .header__link-number {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 .header__link:link, .header__link:visited {
-  min-height: 3.8rem;
+  min-height: 3.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +175,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 2rem;
-  padding: 0 1.5rem;
+  padding: 0 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: background-color 0.2s;
