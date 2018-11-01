@@ -28,6 +28,10 @@
     background: $white;
     text-transform: uppercase;
 
+    @media only screen and (max-width: 768px) {
+      font-size: 2.6rem;
+    }
+
     a {
       padding: 0.5rem 1rem;
       text-decoration: none;
@@ -55,6 +59,10 @@
     font-size: 3rem;
     color: $white;
     margin-left: 2.5rem;
+    @media only screen and (max-width: 992px) {
+      margin-left: 2rem;
+      font-size: 1.8rem;
+    }
   }
 
   &__link-number {
@@ -75,6 +83,9 @@
 
     @media only screen and (max-width: 992px) {
       animation: none;
+      font-size: 1.7rem !important;
+      padding: 0 1rem;
+      min-height: 3.7rem;
     }
   }
 
@@ -94,6 +105,13 @@
     color: $white;
     border-radius: 0.3rem;
     outline: none;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 1.4rem;
+      min-height: 2.8rem;
+      padding: 0 1rem;
+    }
+
     &:hover {
       text-decoration: underline;
     }

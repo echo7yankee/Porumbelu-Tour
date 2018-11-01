@@ -17,6 +17,11 @@
     font-weight: 400;
     color: $white;
     margin-bottom: 1.6rem;
+
+    @media only screen and (max-width: 992px) {
+      text-align: center;
+      font-size: 1.9rem;
+    }
   }
 
   &__icons {
@@ -25,6 +30,12 @@
 
   &__advantage {
     color: rgb(137, 167, 137);
+    @media only screen and (max-width: 992px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 1.4rem;
+    }
   }
 
   &__copyright {
