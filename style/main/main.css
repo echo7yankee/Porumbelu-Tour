@@ -87,6 +87,17 @@ body {
   }
 }
 
+.header__logoImg {
+  width: 18rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__logoImg {
+    width: 22rem;
+  }
+}
+
 .header__logo {
   font-size: 3.6rem;
   margin-left: 2rem;
@@ -356,6 +367,7 @@ body {
   width: 100vw;
   margin: 0rem auto;
   background-color: #f5f5f5;
+  padding: 0 0.5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -394,7 +406,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .banner__header {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -411,7 +423,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .banner__paragraph {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -498,8 +510,6 @@ body {
   height: 100%;
   position: absolute;
   opacity: 0;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -574,10 +584,11 @@ body {
   z-index: 1;
   color: white;
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.678);
   min-height: 400px;
+  padding: 1.2rem;
   line-height: 23px;
   overflow: hidden;
   display: -webkit-box;
@@ -883,6 +894,7 @@ h1 {
           align-items: center;
   border-radius: 0.5rem;
   margin-top: 6rem;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -891,6 +903,8 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+    padding: 0.2rem;
   }
 }
 
@@ -937,6 +951,12 @@ h1 {
   margin-top: 1.5rem;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__form {
+    padding: 0rem 0.7rem;
+  }
+}
+
 .contact__form-label {
   width: 80%;
   display: -webkit-box;
@@ -961,7 +981,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .contact__form-label {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -979,12 +999,15 @@ h1 {
 @media screen and (max-width: 992px) {
   .contact__form-input {
     font-size: 1.7rem;
+    height: 5.6rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .contact__form-input {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    height: 4.8rem;
+    text-indent: 0.6rem;
   }
 }
 
@@ -1014,16 +1037,16 @@ h1 {
 
 @media screen and (max-width: 992px) {
   .contact__form-input::-webkit-input-placeholder {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .contact__form-input:-ms-input-placeholder {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .contact__form-input::-ms-input-placeholder {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .contact__form-input::placeholder {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -1079,6 +1102,12 @@ h1 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .contact__form-alert {
+    font-size: 1.6rem;
+  }
+}
+
 .contact__address-container {
   width: 35%;
   min-height: 73rem;
@@ -1121,20 +1150,28 @@ h1 {
 @media screen and (max-width: 992px) {
   .contact__secondary {
     width: 100%;
-    font-size: 2.3rem;
+    font-size: 2rem;
+    padding: 1rem 0.8rem;
     margin: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .contact__secondary {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
 .contact__info {
   margin-left: 1.2rem;
   padding: 0 1.4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__info {
+    padding: 0rem 0.2rem;
+    margin: 0;
+  }
 }
 
 .contact__ternary {
@@ -1165,6 +1202,12 @@ h1 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .contact__text {
+    font-size: 1.4rem;
+  }
+}
+
 .contact__info--contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1177,13 +1220,13 @@ h1 {
 
 .contact__message:link, .contact__message:visited {
   text-decoration: none;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   background-color: #32425f;
-  padding: 1.2rem 1.5rem;
+  padding: 1rem 1rem;
   border-radius: 0.3rem;
   color: #f5f5f5;
   text-align: center;
-  margin: 1.2rem 0;
+  margin: 0.8rem 0;
   display: block;
   -webkit-box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.4);
@@ -1193,13 +1236,13 @@ h1 {
 
 @media screen and (max-width: 992px) {
   .contact__message:link, .contact__message:visited {
-    font-size: 2.2rem;
+    font-size: 1.65rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .contact__message:link, .contact__message:visited {
-    font-size: 2rem;
+    font-size: 1.45rem;
   }
 }
 
@@ -1543,6 +1586,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1566,6 +1613,12 @@ h1 {
   min-height: 30vh;
 }
 
+@media only screen and (max-width: 992px) {
+  .footer__advantages {
+    min-height: 37vh;
+  }
+}
+
 .footer__header {
   font-size: 2.4rem;
   font-weight: 400;
@@ -1577,6 +1630,12 @@ h1 {
   .footer__header {
     text-align: center;
     font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer__header {
+    font-size: 1.7rem;
   }
 }
 
@@ -1596,7 +1655,22 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   .footer__advantage {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+}
+
+.footer__logo {
+  margin-top: 3rem;
+}
+
+.footer__logoImg {
+  width: 30rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .footer__logoImg {
+    width: 20rem;
   }
 }
 
@@ -1619,5 +1693,11 @@ h1 {
 .footer__copy {
   color: #4a574a;
   font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__copy {
+    font-size: 1.6rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
