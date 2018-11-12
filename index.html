@@ -1,285 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts-awesome/css/all.min.css">
-    <link rel="stylesheet" href="./style/main/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="./style/main/main.css" />
     <title>Porumbelu-Tour</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="menu-container">
-        <div class="menu">
-            <span class="menu__span">Meniu</span>
-            <div class="menu__one"></div>
-            <!--  <div class="menu__two"></div> -->
-        </div>
+      <div class="menu">
+        <span class="menu__span">Meniu</span>
+        <div class="menu__one"></div>
+        <!-- <div class="menu__two"></div> -->
+      </div>
     </div>
 
     <header class="header">
-        <div class="header__logo-container">
-            <!-- <h1 class="header__logo"><a href="index.html">Porumbelu Tour</a></h1> -->
-            <a href="./index.html" class="header__logoLink"><img src="./img/logo.jpg" alt="" class="header__logoImg"></a>
+      <div class="header__logo-container">
+        <!--
+          <h1 class="header__logo"><a href="index.html">Porumbelu Tour</a></h1>
+        -->
+        <a href="./index.html" class="header__logoLink"
+          ><img src="./img/logo.jpg" alt="" class="header__logoImg"
+        /></a>
+      </div>
 
-        </div>
+      <div class="header__number ">
+        <a href="tel:+40748482443" class="header__link-number"
+          >Rezerva la +40-748-482443</a
+        >
+        <i class="fas fa-phone header__icon"></i>
+      </div>
 
-        <div class="header__number ">
-            <a href="tel:+40748482443" class="header__link-number">Rezerva la +40-748-482443</a>
-            <i class="fas fa-phone header__icon"></i>
-        </div>
-
-        <ul class="header__list">
-
-            <li class="header__item" id="home">
-                <a href="./index.html" class="header__link current">Acasa</a>
-            </li>
-            <li class="header__item" id="contact">
-                <a href="./contact.html" class="header__link">Contact Si Rezervari</a>
-            </li>
-        </ul>
+      <ul class="header__list">
+        <li class="header__item" id="home">
+          <a href="./index.html" class="header__link current">Acasa</a>
+        </li>
+        <li class="header__item" id="contact">
+          <a href="./contact.html" class="header__link">Contact Si Rezervari</a>
+        </li>
+      </ul>
     </header>
 
-
     <section class="banner">
-        <div class="banner__header-container">
-            <h1 class="banner__header">Transport persoane Romania-Austria si Austria-Romania</h1>
-            <p class="banner__paragraph">Preturi incepand de la 60 <i class="fas fa-euro-sign"></i> de persoana</p>
-            <div class="banner__underline"></div>
-            <div class="banner__info">
-                <!--<p class="slider__text">Plecari in fiecare zi <i class="far fa-calendar-alt"></i></p>
-                <p class="slider__text">Transport la usa <i class="fas fa-home"></i></p>
-                <p class="slider__text">Transport comfortabil <i class="fas fa-couch"></i></p> -->
-            </div>
+      <div class="banner__header-container">
+        <h1 class="banner__header">
+          Transport persoane Romania-Austria si Austria-Romania
+        </h1>
+        <p class="banner__paragraph">
+          Preturi incepand de la 60 <i class="fas fa-euro-sign"></i> de persoana
+        </p>
+        <div class="banner__underline"></div>
+        <div class="banner__info">
+          <!--
+            <p class="slider__text">Plecari in fiecare zi <i class="far fa-calendar-alt"></i></p>
+            <p class="slider__text">Transport la usa <i class="fas fa-home"></i></p>
+            <p class="slider__text">Transport comfortabil <i class="fas fa-couch"></i></p>
+          -->
         </div>
+      </div>
     </section>
 
     <section class="slider">
-        <div class="galleryContainer">
-            <div class="slideShowContainer">
-                <div id="playPauseBtn"></div>
-                <div class="leftArrow"><span class="arrow arrowLeft"></span></div>
-                <div class="rightArrow"><span class="arrow arrowRight"></span></div>
-                <div class="captionHolder">
-                    <p class=" captionText"></p>
-                </div>
-                <!--  <div class="imageHolder">
-                    <img src="img/slider-1.jpeg" alt="">
-                    <p class="captionText">Caption Text-01</p>
-                </div> -->
-                <div class="imageHolder">
-                    <img src="img/slider-2.jpg" alt="">
-                    <div class="captionText">
-                        <p>Reduceri pentru grupuri +4 persoane</p>
-                        <p><i class="fas fa-check"></i>Reduceri pentru copii</p>
-                        <p>Transport direct de la adresa cu microbuze moderne</p>
-                        <p>Beneficiezi de aer conditional, scaune confortabile si conditii moderne de transport</p>
-                    </div>
-                </div>
-                <div class="imageHolder">
-                    <img src="img/slider-3.jpg" alt="">
-                    <div class="captionText">
-                        <p>Bagaje 2 genti sau 50kg inclus in pretul biletului</p>
-                        <p>Transportul se efectueaza cu microbuze noi</p>
-                        <p>2 soferi pe fiecare microbuz</p>
-                        <p>siguranta, promptitudine si rapiditate</p>
-                    </div>
-                </div>
-                <div class="imageHolder">
-                    <img src="img/slider-4.jpg" alt="">
-                    <div class="captionText">
-                        <p>Daca iti doresti sa pornesti la drum catre Austria si inca nu te-ai decis cu privire la
-                            mijlocul de transport cu ajutorul caruia sa ajungi la aceasta destinatie, noi reprezentam
-                            cea mai buna solutie. Plecarile catre aceasta destinatie si nu numai, se fac in fiecare zi</p>
-                        <p>Avem transport persoane la preturi accesibile si in conditii de siguranta si confort sporit.</p>
-                        <p>Calatorul trebuie sa se prezinte la imbarcare in microbuz cu 20 minute inainte de plecare</p>
-                    </div>
-                </div>
-                <div class="imageHolder">
-                    <img src="img/slider-5.jpeg" alt="">
-                    <div class="captionText">
-                        <h1 class="captionText-header">Trasee Romania:</h1>
-                        <p>Ruta 1: Otelu Rosu- aransebes-Lugoj-Resita-Bocsa-Timisoara-Arad-Jimbolia-Sannicolau
-                            Mare-etc</p>
-                        <p>Ruta 2: Bucuresti-Pitesti-Slatina-Bals-Craiova-Filiasi-Strehaia-Drobeta Turnu
-                            Severin-Orsova-Caransebes-Lugoj-Timisoara-Cenad.</p>
-                        <p>Ruta 3: Iasi-Bacau-Husi-Bârlad-Vaslui-Onesti-Brasov- Sighisoara-Medias-Sibiu-Alba
-                            Iulia-Sebes-Deva-Ilia-Savârsin-Lipova-Arad</p>
-                        <h2 class="captionText-header">Trasee Austria:</h2>
-                        <p>Ruta 1: Viena-Sankt Polten-Krems an der
-                            Donau-Hollabrunn-Horn-Mistelbach-Zwettl-Gmund-Melk-Amstetten-Steyr-Linz-Wels-Freistadt-Ried
-                            im Innkreis-Braunau am Inn-Vöcklabruck-Gmunden-Salzburg</p>
-                        <p>Ruta 2: Viena-Wiener Neustadt-Kapfenberg-Leoben-Trieben-Liezen-Bad Ischl-St. Johann im
-                            Pongau-Zell am See-Mayrhofen</p>
-                        <p>Ruta 3: Viena-Wiener Neustadt-Hartberg-Oberwart-Gleisdorf-Graz-Leibnitz-
-                            Judenburg-Wolfsberg-Murau-Klagenfurt am Wörthersee-Villach-Spittal an der Drau-
-                            Greifenburg-Lienz</p>
-                    </div>
-                </div>
+      <div class="galleryContainer">
+        <div class="slideShowContainer">
+          <div id="playPauseBtn"></div>
+          <div class="leftArrow"><span class="arrow arrowLeft"></span></div>
+          <div class="rightArrow"><span class="arrow arrowRight"></span></div>
+          <div class="captionHolder"><p class=" captionText"></p></div>
+          <!--
+            <div class="imageHolder">
+                <img src="img/slider-1.jpeg" alt="">
+                <p class="captionText">Caption Text-01</p>
             </div>
-            <div id="dotsContainer"></div>
+          -->
+          <div class="imageHolder">
+            <img src="img/slider-2.jpg" alt="" />
+            <div class="captionText">
+              <p>Reduceri pentru grupuri +4 persoane</p>
+              <p><i class="fas fa-check"></i>Reduceri pentru copii</p>
+              <p>Transport direct de la adresa cu microbuze moderne</p>
+              <p>
+                Beneficiezi de aer conditional, scaune confortabile si conditii
+                moderne de transport
+              </p>
+            </div>
+          </div>
+          <div class="imageHolder">
+            <img src="img/slider-3.jpg" alt="" />
+            <div class="captionText">
+              <p>Bagaje 2 genti sau 50kg inclus in pretul biletului</p>
+              <p>Transportul se efectueaza cu microbuze noi</p>
+              <p>2 soferi pe fiecare microbuz</p>
+              <p>siguranta, promptitudine si rapiditate</p>
+            </div>
+          </div>
+          <div class="imageHolder">
+            <img src="img/slider-4.jpg" alt="" />
+            <div class="captionText">
+              <p>
+                Daca iti doresti sa pornesti la drum catre Austria si inca nu
+                te-ai decis cu privire la mijlocul de transport cu ajutorul
+                caruia sa ajungi la aceasta destinatie, noi reprezentam cea mai
+                buna solutie. Plecarile catre aceasta destinatie si nu numai, se
+                fac in fiecare zi
+              </p>
+              <p>
+                Avem transport persoane la preturi accesibile si in conditii de
+                siguranta si confort sporit.
+              </p>
+              <p>
+                Calatorul trebuie sa se prezinte la imbarcare in microbuz cu 20
+                minute inainte de plecare
+              </p>
+            </div>
+          </div>
+          <div class="imageHolder">
+            <img src="img/slider-5.jpeg" alt="" />
+            <div class="captionText">
+              <h1 class="captionText-header">Trasee Romania:</h1>
+              <p>
+                Ruta 1: Otelu Rosu-
+                aransebes-Lugoj-Resita-Bocsa-Timisoara-Arad-Jimbolia-Sannicolau
+                Mare-etc
+              </p>
+              <p>
+                Ruta 2:
+                Bucuresti-Pitesti-Slatina-Bals-Craiova-Filiasi-Strehaia-Drobeta
+                Turnu Severin-Orsova-Caransebes-Lugoj-Timisoara-Cenad.
+              </p>
+              <p>
+                Ruta 3: Iasi-Bacau-Husi-Bârlad-Vaslui-Onesti-Brasov-
+                Sighisoara-Medias-Sibiu-Alba
+                Iulia-Sebes-Deva-Ilia-Savârsin-Lipova-Arad
+              </p>
+              <h2 class="captionText-header">Trasee Austria:</h2>
+              <p>
+                Ruta 1: Viena-Sankt Polten-Krems an der
+                Donau-Hollabrunn-Horn-Mistelbach-Zwettl-Gmund-Melk-Amstetten-Steyr-Linz-Wels-Freistadt-Ried
+                im Innkreis-Braunau am Inn-Vöcklabruck-Gmunden-Salzburg
+              </p>
+              <p>
+                Ruta 2: Viena-Wiener
+                Neustadt-Kapfenberg-Leoben-Trieben-Liezen-Bad Ischl-St. Johann
+                im Pongau-Zell am See-Mayrhofen
+              </p>
+              <p>
+                Ruta 3: Viena-Wiener
+                Neustadt-Hartberg-Oberwart-Gleisdorf-Graz-Leibnitz-
+                Judenburg-Wolfsberg-Murau-Klagenfurt am
+                Wörthersee-Villach-Spittal an der Drau- Greifenburg-Lienz
+              </p>
+            </div>
+          </div>
         </div>
+        <div id="dotsContainer"></div>
+      </div>
     </section>
 
     <section class="locations">
-        <div class="locations__info">
-            <h3 class="locations__quaternary">Localitati plecare si sosire Romania - Austria</h3>
-            <p class="locations__paragraph"> <i class="fas fa-exclamation locations__icon"></i>
-                Se transporta
-                persoane si din imprejurimea acestor localitati <i class="fas fa-exclamation locations__icon"></i>
-            </p>
-            <div class="locations__message">
-                <a href="tel:+40748482443" class="contact__message locations__number">+40-748-482443</a>
-                <a href="#" class="contact__message locations__number locations__email">porumbelu1992@yahoo.com</a>
-            </div>
+      <div class="locations__info">
+        <h3 class="locations__quaternary">
+          Localitati plecare si sosire Romania - Austria
+        </h3>
+        <p class="locations__paragraph">
+          <i class="fas fa-exclamation locations__icon"></i> Se transporta
+          persoane si din imprejurimea acestor localitati
+          <i class="fas fa-exclamation locations__icon"></i>
+        </p>
+        <div class="locations__message">
+          <a href="tel:+40748482443" class="contact__message locations__number"
+            >+40-748-482443</a
+          >
+          <a
+            href="#"
+            class="contact__message locations__number locations__email"
+            >porumbelu1992@yahoo.com</a
+          >
         </div>
-        <div class="locations__container">
-            <div class="locations__location locations__border">
-                <h3 class="locations__ternary">Localitate-Austria</h3>
-            </div>
-            <div class="locations__location">
-                <h3 class="locations__ternary">Cod Postal</h3>
-                <p class="locations__text">3300</p>
-                <p class="locations__text">5640</p>
-                <p class="locations__text">4820</p>
-                <p class="locations__text">2500</p>
-                <p class="locations__text">5280, 5282</p>
-                <p class="locations__text">8600</p>
-                <p class="locations__text">4470</p>
-                <p class="locations__text">5542</p>
-                <p class="locations__text">4240</p>
-                <p class="locations__text">9360</p>
-                <p class="locations__text">8200</p>
-                <p class="locations__text">3950</p>
-                <p class="locations__text">4810</p>
-                <p class="locations__text">8010, 8036, 8042</p>
-                <p class="locations__text">8230</p>
-                <p class="locations__text">2020</p>
-                <p class="locations__text">3580</p>
-                <p class="locations__text">6020, 6063, 6072</p>
-                <p class="locations__text">8605</p>
-                <p class="locations__text">5710</p>
-                <p class="locations__text">6370</p>
-                <p class="locations__text">9010, 9020, 9061</p>
-                <p class="locations__text">3494, 3500, 3506</p>
-                <p class="locations__text">6330</p>
-                <p class="locations__text">8700</p>
-                <p class="locations__text">9900</p>
-                <p class="locations__text">8940</p>
-                <p class="locations__text">4020, 4024, 4030</p>
-                <p class="locations__text">8630</p>
-                <p class="locations__text">5230</p>
-                <p class="locations__text">6290</p>
-                <p class="locations__text">3390</p>
-                <p class="locations__text">2130</p>
-                <p class="locations__text">5310</p>
-                <p class="locations__text">8850</p>
-                <p class="locations__text">5562</p>
-                <p class="locations__text">7111</p>
-                <p class="locations__text">5020, 5026, 5071</p>
-                <p class="locations__text">3100, 3104, 3105</p>
-                <p class="locations__text">9701, 9800</p>
-                <p class="locations__text">6380</p>
-                <p class="locations__text">4400</p>
-                <p class="locations__text">4050</p>
-                <p class="locations__text">1010, 1050, 1090</p>
-                <p class="locations__text">9241, 9504, 9524</p>
-                <p class="locations__text">3340</p>
-                <p class="locations__text">4600, 4623</p>
-                <p class="locations__text">2700</p>
-                <p class="locations__text">9400</p>
-                <p class="locations__text">5700</p>
-                <p class="locations__text">3910</p>
-            </div>
+      </div>
+      <div class="locations__container">
+        <div class="locations__location locations__border">
+          <h3 class="locations__ternary">Localitate-Austria</h3>
         </div>
+        <div class="locations__location">
+          <h3 class="locations__ternary">Cod Postal</h3>
+          <p class="locations__text">3300</p>
+          <p class="locations__text">5640</p>
+          <p class="locations__text">4820</p>
+          <p class="locations__text">2500</p>
+          <p class="locations__text">5280, 5282</p>
+          <p class="locations__text">8600</p>
+          <p class="locations__text">4470</p>
+          <p class="locations__text">5542</p>
+          <p class="locations__text">4240</p>
+          <p class="locations__text">9360</p>
+          <p class="locations__text">8200</p>
+          <p class="locations__text">3950</p>
+          <p class="locations__text">4810</p>
+          <p class="locations__text">8010, 8036, 8042</p>
+          <p class="locations__text">8230</p>
+          <p class="locations__text">2020</p>
+          <p class="locations__text">3580</p>
+          <p class="locations__text">6020, 6063, 6072</p>
+          <p class="locations__text">8605</p>
+          <p class="locations__text">5710</p>
+          <p class="locations__text">6370</p>
+          <p class="locations__text">9010, 9020, 9061</p>
+          <p class="locations__text">3494, 3500, 3506</p>
+          <p class="locations__text">6330</p>
+          <p class="locations__text">8700</p>
+          <p class="locations__text">9900</p>
+          <p class="locations__text">8940</p>
+          <p class="locations__text">4020, 4024, 4030</p>
+          <p class="locations__text">8630</p>
+          <p class="locations__text">5230</p>
+          <p class="locations__text">6290</p>
+          <p class="locations__text">3390</p>
+          <p class="locations__text">2130</p>
+          <p class="locations__text">5310</p>
+          <p class="locations__text">8850</p>
+          <p class="locations__text">5562</p>
+          <p class="locations__text">7111</p>
+          <p class="locations__text">5020, 5026, 5071</p>
+          <p class="locations__text">3100, 3104, 3105</p>
+          <p class="locations__text">9701, 9800</p>
+          <p class="locations__text">6380</p>
+          <p class="locations__text">4400</p>
+          <p class="locations__text">4050</p>
+          <p class="locations__text">1010, 1050, 1090</p>
+          <p class="locations__text">9241, 9504, 9524</p>
+          <p class="locations__text">3340</p>
+          <p class="locations__text">4600, 4623</p>
+          <p class="locations__text">2700</p>
+          <p class="locations__text">9400</p>
+          <p class="locations__text">5700</p>
+          <p class="locations__text">3910</p>
+        </div>
+      </div>
 
-        <div class="locations__container locations__container--2">
-            <div class="locations__location locations__border">
-                <h3 class="locations__ternary">Localitate-Romania</h3>
-                <div class="locations__ro"></div>
-            </div>
-            <div class="locations__location locations__locationRo">
-                <h3 class="locations__ternary">Cod Postal</h3>
-                <a href="https://www.coduripostale.com/Arad" target="_blank" class=" locations__link">CP
-                    Arad</a>
-                <p class="locations__text">600085, 600087</p>
-                <p class="locations__text">235100</p>
-                <p class="locations__text">325300</p>
-                <p class="locations__text">500001, 500053</p>
-                <p class="locations__text">010164, 010882</p>
-                <a href="https://www.coduripostale.ro/Vaslui/Barlad" target="_blank" class=" locations__link">CP
-                    Bârlad</a>
-                <p class="locations__text">325400</p>
-                <p class="locations__text">307095</p>
-                <a href="https://www.coduripostale.ro/Dolj/Craiova" target="_blank" class=" locations__link">CP
-                    Craiova</a>
-                <p class="locations__text">330004, 330155</p>
-                <p class="locations__text">220177</p>
-                <p class="locations__text">205300</p>
-                <p class="locations__text">735100</p>
-                <p class="locations__text">700051, 700259</p>
-                <p class="locations__text">337270</p>
-                <p class="locations__text">305400</p>
-                <p class="locations__text">315400</p>
-                <p class="locations__text">305500</p>
-                <a href="https://www.coduripostale.ro/Sibiu/Medias" target="_blank" class=" locations__link">CP
-                    Medias</a>
-                <p class="locations__text">601002, 601006</p>
-                <p class="locations__text">225200</p>
-                <p class="locations__text">325700</p>
-                <p class="locations__text">110072</p>
-                <a href="https://www.coduripostale.com/Caras-Severin/Resita" target="_blank" class=" locations__link">CP
-                    Resita</a>
-                <p class="locations__text">305600</p>
-                <p class="locations__text">317270, 317271</p>
-                <p class="locations__text">515800</p>
-                <p class="locations__text">550075, 550337</p>
-                <p class="locations__text">545400</p>
-                <p class="locations__text">230037</p>
-                <p class="locations__text">225300</p>
-                <p class="locations__text">3300254, 300455</p>
-                <a href="https://www.coduripostale.com/Vaslui/Vaslui" target="_blank" class=" locations__link">CP
-                    Vaslui</a>
-            </div>
+      <div class="locations__container locations__container--2">
+        <div class="locations__location locations__border">
+          <h3 class="locations__ternary">Localitate-Romania</h3>
+          <div class="locations__ro"></div>
         </div>
+        <div class="locations__location locations__locationRo">
+          <h3 class="locations__ternary">Cod Postal</h3>
+          <a
+            href="https://www.coduripostale.com/Arad"
+            target="_blank"
+            class=" locations__link"
+            >CP Arad</a
+          >
+          <p class="locations__text">600085, 600087</p>
+          <p class="locations__text">235100</p>
+          <p class="locations__text">325300</p>
+          <p class="locations__text">500001, 500053</p>
+          <p class="locations__text">010164, 010882</p>
+          <a
+            href="https://www.coduripostale.ro/Vaslui/Barlad"
+            target="_blank"
+            class=" locations__link"
+            >CP Bârlad</a
+          >
+          <p class="locations__text">325400</p>
+          <p class="locations__text">307095</p>
+          <a
+            href="https://www.coduripostale.ro/Dolj/Craiova"
+            target="_blank"
+            class=" locations__link"
+            >CP Craiova</a
+          >
+          <p class="locations__text">330004, 330155</p>
+          <p class="locations__text">220177</p>
+          <p class="locations__text">205300</p>
+          <p class="locations__text">735100</p>
+          <p class="locations__text">700051, 700259</p>
+          <p class="locations__text">337270</p>
+          <p class="locations__text">305400</p>
+          <p class="locations__text">315400</p>
+          <p class="locations__text">305500</p>
+          <a
+            href="https://www.coduripostale.ro/Sibiu/Medias"
+            target="_blank"
+            class=" locations__link"
+            >CP Medias</a
+          >
+          <p class="locations__text">601002, 601006</p>
+          <p class="locations__text">225200</p>
+          <p class="locations__text">325700</p>
+          <p class="locations__text">110072</p>
+          <a
+            href="https://www.coduripostale.com/Caras-Severin/Resita"
+            target="_blank"
+            class=" locations__link"
+            >CP Resita</a
+          >
+          <p class="locations__text">305600</p>
+          <p class="locations__text">317270, 317271</p>
+          <p class="locations__text">515800</p>
+          <p class="locations__text">550075, 550337</p>
+          <p class="locations__text">545400</p>
+          <p class="locations__text">230037</p>
+          <p class="locations__text">225300</p>
+          <p class="locations__text">3300254, 300455</p>
+          <a
+            href="https://www.coduripostale.com/Vaslui/Vaslui"
+            target="_blank"
+            class=" locations__link"
+            >CP Vaslui</a
+          >
+        </div>
+      </div>
     </section>
 
     <section class="footer">
-        <a href="./index.html" class="footer__logo">
-            <img src="./img/logo.jpg" alt="" class="footer__logoImg">
-        </a>
-        <div class="footer__advantages">
-            <h3 class="footer__header">Avantaje</h3>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Flexibilitate</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Soferi educati, cu experienta</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Mediu de calatorie placut</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Geamuri privacy cu protectie solara</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Habitaclu climatizat bi-zona, fata
-                si spate</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Imbarcare si debarcare de la adresa,
-                Austria</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Scaune individuale si spatar
-                reglabil</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Nu se fumeaza si nu se consuma
-                alcool in microbuz</p>
-        </div>
-
+      <a href="./index.html" class="footer__logo">
+        <img src="./img/logo.jpg" alt="" class="footer__logoImg" />
+      </a>
+      <div class="footer__advantages">
+        <h3 class="footer__header">Avantaje</h3>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Flexibilitate
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Soferi educati, cu
+          experienta
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Mediu de calatorie placut
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Geamuri privacy cu protectie
+          solara
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Habitaclu climatizat
+          bi-zona, fata si spate
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Imbarcare si debarcare de la
+          adresa, Austria
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Scaune individuale si spatar
+          reglabil
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Nu se fumeaza si nu se
+          consuma alcool in microbuz
+        </p>
+      </div>
     </section>
     <section class="footer__copyright">
-        <p class="footer__copy">&copy; <span id="footer__date"></span> Toate drepturile sunt rezervate Porumbelu
-            Tour</p>
+      <p class="footer__copy">
+        &copy; <span id="footer__date"></span> Toate drepturile sunt rezervate
+        Porumbelu Tour
+      </p>
+      <div class="footer__socialMedia">
+        <a
+          href="https://www.facebook.com/PorumbelulTourTransportPersoane/"
+          target="_blank"
+          class="contact__link"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
     </section>
 
-
     <script src="./js/app.js"></script>
-    <script>window.onload = indexInit</script>
-
-</body>
-
+    <script>
+      window.onload = indexInit;
+    </script>
+  </body>
 </html>

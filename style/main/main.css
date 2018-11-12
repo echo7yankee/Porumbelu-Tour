@@ -1191,11 +1191,13 @@ h1 {
   color: #36486b;
   border-bottom: 0.1rem solid #364836;
   text-transform: uppercase;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 992px) {
   .contact__ternary {
     font-size: 1.8rem;
+    margin: 0;
   }
 }
 
@@ -1215,6 +1217,11 @@ h1 {
   .contact__text {
     font-size: 1.4rem;
   }
+}
+
+.contact__link:link, .contact__link:visited {
+  font-size: 4.6rem;
+  color: #3b5998;
 }
 
 .contact__info--contact {
@@ -1685,11 +1692,15 @@ h1 {
 
 .footer__copyright {
   width: 100%;
-  height: 8rem;
+  min-height: 8rem;
   background: #ededdc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1697,6 +1708,15 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.footer__socialMedia {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footer__copy {

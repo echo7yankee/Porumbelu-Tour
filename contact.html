@@ -1,133 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts-awesome/css/all.min.css">
-    <link rel="stylesheet" href="./style/main/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="./style/main/main.css" />
     <title>Porumbelu-Tour Contact</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="menu-container">
-        <div class="menu">
-            <span class="menu__span">Meniu</span>
-            <div class="menu__one"></div>
-            <!--  <div class="menu__two"></div> -->
-        </div>
+      <div class="menu">
+        <span class="menu__span">Meniu</span>
+        <div class="menu__one"></div>
+        <!-- <div class="menu__two"></div> -->
+      </div>
     </div>
 
-
-
     <header class="header">
-        <div class="header__logo-container">
-            <!-- <h1 class="header__logo"><a href="index.html">Porumbelu Tour</a></h1> -->
-            <a href="./index.html" class="header__logoLink"><img src="./img/logo.jpg" alt="" class="header__logoImg"></a>
-        </div>
+      <div class="header__logo-container">
+        <!--
+          <h1 class="header__logo"><a href="index.html">Porumbelu Tour</a></h1>
+        -->
+        <a href="./index.html" class="header__logoLink"
+          ><img src="./img/logo.jpg" alt="" class="header__logoImg"
+        /></a>
+      </div>
 
-        <div class="header__number ">
-            <a href="tel:+40748482443" class="header__link-number">Rezerva la +40-748-482443</a>
-            <i class="fas fa-phone header__icon"></i>
-        </div>
+      <div class="header__number ">
+        <a href="tel:+40748482443" class="header__link-number"
+          >Rezerva la +40-748-482443</a
+        >
+        <i class="fas fa-phone header__icon"></i>
+      </div>
 
-        <ul class="header__list">
-
-            <li class="header__item" id="home">
-                <a href="./index.html" class="header__link">Acasa</a>
-            </li>
-            <li class="header__item" id="contact">
-                <a href="./contact.html" class="header__link current">Contact Si Rezervari</a>
-            </li>
-        </ul>
+      <ul class="header__list">
+        <li class="header__item" id="home">
+          <a href="./index.html" class="header__link">Acasa</a>
+        </li>
+        <li class="header__item" id="contact">
+          <a href="./contact.html" class="header__link current"
+            >Contact Si Rezervari</a
+          >
+        </li>
+      </ul>
     </header>
 
     <section class="contact">
-        <div class="contact__container">
-            <div class="contact__form-container">
-                <form action="https://formspree.io/porumbelu1992@yahoo.com" method="POST" class="contact__form">
-                    <h2 class="contact__secondary contact__secondary-fullWidth">Rezerva un transport imediat completand
-                        formularul de mai jos</h2>
-                    <span class="contact__form-alert"></span>
-                    <label for="" class="contact__form-label">Numele
-                        <input type="text" name="Numele" class="contact__form-input" placeholder="ex:Pop Vasile">
-                    </label>
-                    <label for="" class="contact__form-label">Plecare
-                        <input type="text" name="Plecare" class="contact__form-input" placeholder="ex:Localitate, Oras, cod postal daca este oras din Austria">
-                    </label>
-                    <label for="" class="contact__form-label">Sosire
-                        <input type="text" name="Sosire" class="contact__form-input" placeholder="ex:Localitate, Oras, cod postal daca este oras din Austria">
-                    </label>
-                    <label for="" class="contact__form-label">Data plecarii
-                        <input type="text" name="Data" class="contact__form-input" placeholder="ex: 28.09.2018">
-                    </label>
-                    <label for="" class="contact__form-label">Email
-                        <input type="email" name="Email" class="contact__form-input" placeholder="ex:pop_vasile@yahoo.com">
-                    </label>
-                    <input type="submit" value="Rezerva un transport" class="contact__form-submit">
-                </form>
-            </div>
-            <div class="contact__underline"></div>
-            <div class="contact__address-container">
-                <h2 class="contact__secondary">Porumbelu Tour - Contact</h2>
-                <div class="contact__info">
-                    <h3 class="contact__ternary">Adresa</h3>
-                    <p class="contact__text">Strada Salciei, Nr. 2, CP: 317405</p>
-                </div>
-                <div class="contact__info contact__info--contact">
-                    <h3 class="contact__ternary">E-mail si Telefon</h3>
-                    <a href="" class="contact__message">porumbelu1992@yahoo.com <i class="fas fa-envelope contact__icon"></i></a>
-                    <a href="tel:+40748482443" class="contact__message">+40-748-482-443 RO<i class="fas fa-phone header__icon contact__icon"></i></a>
-                    <a href="tel:+40741052997" class="contact__message">+40-741-052-997 RO<i class="fas fa-phone header__icon contact__icon"></i></a>
-                    <a href="tel:+40742079761" class="contact__message">+40-742-079-761 RO<i class="fas fa-phone header__icon contact__icon"></i></a>
-                    <a href="tel:+4367763216651" class="contact__message">+43-677-632-166-51 A<i class="fas fa-phone header__icon contact__icon"></i></a>
-                </div>
-                <div class="contact__info">
-                    <h3 class="contact__ternary">Orar</h3>
-                    <p class="contact__text">Luni - Sambata 9:00 AM - 20: 00 PM</p>
-                    <p class="contact__text">Duminica - Inchis</p>
-                </div>
-            </div>
+      <div class="contact__container">
+        <div class="contact__form-container">
+          <form
+            action="https://formspree.io/porumbelu1992@yahoo.com"
+            method="POST"
+            class="contact__form"
+          >
+            <h2 class="contact__secondary contact__secondary-fullWidth">
+              Rezerva un transport imediat completand formularul de mai jos
+            </h2>
+            <span class="contact__form-alert"></span>
+            <label for="" class="contact__form-label"
+              >Numele
+              <input
+                type="text"
+                name="Numele"
+                class="contact__form-input"
+                placeholder="ex:Pop Vasile"
+              />
+            </label>
+            <label for="" class="contact__form-label"
+              >Plecare
+              <input
+                type="text"
+                name="Plecare"
+                class="contact__form-input"
+                placeholder="ex:Localitate, Oras, cod postal daca este oras din Austria"
+              />
+            </label>
+            <label for="" class="contact__form-label"
+              >Sosire
+              <input
+                type="text"
+                name="Sosire"
+                class="contact__form-input"
+                placeholder="ex:Localitate, Oras, cod postal daca este oras din Austria"
+              />
+            </label>
+            <label for="" class="contact__form-label"
+              >Data plecarii
+              <input
+                type="text"
+                name="Data"
+                class="contact__form-input"
+                placeholder="ex: 28.09.2018"
+              />
+            </label>
+            <label for="" class="contact__form-label"
+              >Email
+              <input
+                type="email"
+                name="Email"
+                class="contact__form-input"
+                placeholder="ex:pop_vasile@yahoo.com"
+              />
+            </label>
+            <input
+              type="submit"
+              value="Rezerva un transport"
+              class="contact__form-submit"
+            />
+          </form>
         </div>
+        <div class="contact__underline"></div>
+        <div class="contact__address-container">
+          <h2 class="contact__secondary">Porumbelul Tour - Contact</h2>
+          <div class="contact__info">
+            <h3 class="contact__ternary">Adresa</h3>
+            <p class="contact__text">Strada Salciei, Nr. 2, CP: 317405</p>
+          </div>
+          <div class="contact__info contact__info--contact">
+            <h3 class="contact__ternary">E-mail si Telefon</h3>
+            <a href="" class="contact__message"
+              >porumbelu1992@yahoo.com
+              <i class="fas fa-envelope contact__icon"></i
+            ></a>
+            <a href="tel:+40748482443" class="contact__message"
+              >+40-748-482-443 RO<i
+                class="fas fa-phone header__icon contact__icon"
+              ></i
+            ></a>
+            <a href="tel:+40741052997" class="contact__message"
+              >+40-741-052-997 RO<i
+                class="fas fa-phone header__icon contact__icon"
+              ></i
+            ></a>
+            <a href="tel:+40742079761" class="contact__message"
+              >+40-742-079-761 RO<i
+                class="fas fa-phone header__icon contact__icon"
+              ></i
+            ></a>
+            <a href="tel:+4367763216651" class="contact__message"
+              >+43-677-632-166-51 A<i
+                class="fas fa-phone header__icon contact__icon"
+              ></i
+            ></a>
+          </div>
+          <div class="contact__info">
+            <h3 class="contact__ternary">Social Media</h3>
+            <a
+              href="https://www.facebook.com/PorumbelulTourTransportPersoane/"
+              target="_blank"
+              class="contact__link"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+          <div class="contact__info">
+            <h3 class="contact__ternary">Orar</h3>
+            <p class="contact__text">Luni - Sambata 9:00 AM - 20: 00 PM</p>
+            <p class="contact__text">Duminica - Inchis</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="footer">
+      <a href="./index.html" class="footer__logo">
+        <img src="./img/logo.jpg" alt="" class="footer__logoImg" />
+      </a>
 
-        <a href="./index.html" class="footer__logo">
-            <img src="./img/logo.jpg" alt="" class="footer__logoImg">
-        </a>
-
-        <div class="footer__advantages">
-            <h3 class="footer__header">Avantaje</h3>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Flexibilitate</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Soferi educati, cu experienta</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Mediu de calatorie placut</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Geamuri privacy cu protectie solara</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Habitaclu climatizat bi-zona, fata
-                si spate</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Imbarcare si debarcare de la adresa,
-                Austria</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Scaune individuale si spatar
-                reglabil</p>
-            <p class="footer__advantage"><i class="fas fa-check footer__icons"></i>Nu se fumeaza si nu se consuma
-                alcool in microbuz</p>
-        </div>
-
+      <div class="footer__advantages">
+        <h3 class="footer__header">Avantaje</h3>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Flexibilitate
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Soferi educati, cu
+          experienta
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Mediu de calatorie placut
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Geamuri privacy cu protectie
+          solara
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Habitaclu climatizat
+          bi-zona, fata si spate
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Imbarcare si debarcare de la
+          adresa, Austria
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Scaune individuale si spatar
+          reglabil
+        </p>
+        <p class="footer__advantage">
+          <i class="fas fa-check footer__icons"></i>Nu se fumeaza si nu se
+          consuma alcool in microbuz
+        </p>
+      </div>
     </section>
     <section class="footer__copyright">
-        <p class="footer__copy">&copy; <span id="footer__date"></span> Toate drepturile sunt rezervate Porumbelu
-            Tour</p>
+      <p class="footer__copy">
+        &copy; <span id="footer__date"></span> Toate drepturile sunt rezervate
+        Porumbelu Tour
+      </p>
+      <div class="footer__socialMedia">
+        <a
+          href="https://www.facebook.com/PorumbelulTourTransportPersoane/"
+          target="_blank"
+          class="contact__link"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
     </section>
 
-
-
     <script src="./js/app.js"></script>
-    <script>window.onload = contactInit</script>
-
-</body>
-
+    <script>
+      window.onload = contactInit;
+    </script>
+  </body>
 </html>
